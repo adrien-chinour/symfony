@@ -112,6 +112,10 @@ class UnsupportedSchemeException extends LogicException
             'class' => Bridge\Clickatell\ClickatellTransportFactory::class,
             'package' => 'symfony/clickatell-notifier',
         ],
+        'sns' => [
+            'class' => Bridge\Amazon\AmazonTransportFactory::class,
+            'package' => 'symfony/amazon-notifier'
+        ],
     ];
 
     /**
